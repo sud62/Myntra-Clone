@@ -11,6 +11,7 @@
   justify-content: space-between;
 }
 .mx-2{
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin-left: 3%; */
 }

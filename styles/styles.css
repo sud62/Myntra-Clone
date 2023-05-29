@@ -1,23 +1,26 @@
 html, body{
   width: 100%;
   height: 100%;
+  font-family: 'Hind', sans-serif;
+  color : #3E4152;
+  text-transform: uppercase;
 }
 .left img{
   width : 64px;
   height: 64px;
 }
 .container{
-  max-width: 94vw;
+  max-width: 100%;
   margin :auto;
   text-transform: uppercase;
 }
 .container nav{
   font-family: 'Hind', sans-serif;
   font-weight: 600;
+  padding: 0.6% 3%;
 }
 header{
-  position: sticky;
-  top: 0px;
+  position: fixed;
   background-color: white;
   z-index: 1;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -26,26 +29,77 @@ nav ul li{
   list-style: none;
   padding: 0 14px;
 }
+ul{
+  margin-top: 2.6%;
+}
 .homepage-searchBar{
   display: inline-block;
   font-size: 14px;
   height: 40px;
-  width: 494px;
+  width: 37rem;
+  margin-right: 1.563rem;
   line-height: 24px;
   color: #696e79;
-  padding: 13px 10px 10px;
+  padding: 13px 10px 10px 20px;
   border: 1px solid #f5f5f6;
   border-radius: 0 4px 4px 0;
   border-left: 0;
   background: #f5f5f6;
 }
+.homepage-searchicon{
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 24px;
+  border-radius: 4px 0 0 4px;
+  padding: 1.4% 2%;
+  background-color: #F5F5F6;
 }
 
+input:focus{
+  outline: none;
+  background: #ffffff;
+}
+
+.action-btn{
+  text-transform: none;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1% 2%;
+}
+.mid-icon{
+  display: block;
+}
+.mid-icon img{
+  width: 20px;
+  height: 20px;
+}
+
+
 .section1{
-  background-color: #f5f5f6;
+  /* background-color: #f5f5f6; */
+  padding-top: 5.5rem;
+  background-color: #ffffff;
   height: 180vw;
 }
 
 .carousel-item{
   margin-top : 40px;
+}
+
+
+/* Deals of the day */
+.side-title h4{
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  margin: 100px 0 50px 30px;
+  font-size: 1.8em;
+}
+.top-picks .banner{
+  width: 14%;
+  height: auto;
+}
+.banner{
+  width: 12.2%;
+  height: auto;
 }

@@ -5,18 +5,22 @@
     <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Licorice&family=Patrick+Hand&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="C:\Users\sudha\Desktop\Web_Development\Myntra_Clone\styles\styles.css">
     <link rel="stylesheet" href="C:\Users\sudha\Desktop\Web_Development\Myntra_Clone\styles\utils.css">
+    <script src="https://kit.fontawesome.com/ea50f67470.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- Navbar Section -->
      <header class="container">
        <nav class="flex space-between">
          <div class="left flex items-center">
-         <img src="./Images/myntra-logo.png" alt="">
+         <img src="./Images/icon/myntra-logo.png" alt="">
          <ul class="flex items-center">
            <li>Men</li>
            <li>Women</li>
@@ -27,27 +31,45 @@
          </ul>
          </div>
          <div class="right flex items-center">
+          <span class="homepage-searchicon"><i class="fa-solid fa-magnifying-glass" style="color: #717288;"></i></span>
           <input type="text" placeholder="Search for products, brands and more" class="homepage-searchBar">
-          <div class="profile mx-2" >Profile</div>
-          <div class="wishlist mx-2">Wishlist</div>
-          <div class="bag mx-2">Bag</div>
+          <div class="action-btn" >
+            <!-- <i class="fa-regular fa-user mid-icon" style="color: #3e4152;"></i> -->
+            <span class="mid-icon"><img src="./Images/icon/profile-icon.png" alt="profile-icon"></span>
+            <span>Profile</span>
+          </div>
+          <div class="action-btn">
+            <!-- <i class="fa-regular fa-heart mid-icon"></i> -->
+            <span class="mid-icon"><img src="./Images/icon/wishlist-icon.png" alt="wishlist-icon"></span>
+            <span >Wishlist</span></div>
+          <div class="action-btn">
+            <span class="mid-icon"><img src="./Images/icon/bag-icon.png" alt="bag-icon"></span> 
+            <span>Bag</span> </div>
          </div>
        </nav>
      </header>
+
+     <!-- Slider Section -->
      <section class="section1">
        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
-      <img src="C:\Users\sudha\Desktop\Web_Development\Myntra_Clone\Images\slider-image.png" class="d-block w-100" alt="slider">
+    <div class="carousel-item active" data-bs-interval="1600">
+      <img src="./Images/Slider-image/slider-image.png" class="d-block w-100" alt="slider">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="C:\Users\sudha\Desktop\Web_Development\Myntra_Clone\Images\slider-image2.png" class="d-block w-100" alt="slider">
-    </div>
-    <div class="carousel-item">
-      <img src="C:\Users\sudha\Desktop\Web_Development\Myntra_Clone\Images\slider-image2.png" class="d-block w-100" alt="slider">
+    <div class="carousel-item" data-bs-interval="1600">
+      <img src="./Images/Slider-image/slider-image1.png" class="d-block w-100" alt="slider">
     </div>
     <div class="carousel-item">
-      <img src="C:\Users\sudha\Desktop\Web_Development\Myntra_Clone\Images\slider-image3.png" class="d-block w-100" alt="slider">
+      <img src="./Images/Slider-image/slider-image2.png" class="d-block w-100" alt="slider">
+    </div>
+    <div class="carousel-item">
+      <img src="./Images/Slider-image/slider-image3.png" class="d-block w-100" alt="slider">
+    </div>
+    <div class="carousel-item">
+      <img src="./Images/Slider-image/slider-image4.png" class="d-block w-100" alt="slider">
+    </div>
+    <div class="carousel-item">
+      <img src="./Images/Slider-image/slider-image5.png" class="d-block w-100" alt="slider">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -59,6 +81,90 @@
   <span class="visually-hidden">Next</span>
 </button>
 </div>
-       </section>
+
+<!-- Deals of the day -->
+
+<div class="side-title dotd">
+  <h4>Deals of the day</h4>
+</div>
+
+<div class="flex-column">
+<img class ="banner" src="./Images/DOTD/1.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/2.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/3.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/4.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/5.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/6.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/7.jpg" alt="banner">
+<img class ="banner" src="./Images/DOTD/8.jpg" alt="banner">
+</div>
+
+<div class="side-title bomeb">
+  <h4>BEST OF MYNTRA EXCLUSIVE BRANDS</h4>
+</div>
+<div class="flex-column">
+  <img class ="banner" src="./Images/BOMEB/1.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/2.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/3.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/4.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/5.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/6.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/7.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/8.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/9.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/10.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/11.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/12.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/13.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/14.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/15.jpg" alt="banner">
+  <img class ="banner" src="./Images/BOMEB/16.jpg" alt="banner">
+</div>
+
+<div class="side-title top-picks">
+  <h4>Top Picks</h4>
+  <div class="flex-column"></div>
+  <img class ="banner" src="./Images/Top Picks/1.jpg" alt="banner">
+  <img class ="banner" src="./Images/Top Picks/2.jpg" alt="banner">
+  <img class ="banner" src="./Images/Top Picks/3.jpg" alt="banner">
+  <img class ="banner" src="./Images/Top Picks/4.jpg" alt="banner">
+  <img class ="banner" src="./Images/Top Picks/5.jpg" alt="banner">
+  <img class ="banner" src="./Images/Top Picks/6.jpg" alt="banner">
+  <img class ="banner" src="./Images/Top Picks/7.jpg" alt="banner">
+  </div>
+</div>
+
+<div class="side-title">
+  <h4>Categories to bag</h4>
+  <div class="flex-column categories"></div>
+  <img class ="banner" src="./Images/Categories/1.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/2.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/3.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/4.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/5.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/6.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/7.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/8.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/9.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/10.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/11.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/12.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/13.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/14.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/15.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/16.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/17.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/18.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/19.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/20.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/21.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/22.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/23.png" alt="banner">
+  <img class ="banner" src="./Images/Categories/24.png" alt="banner">
+  </div>
+</div>
+
+</section>
+
   </body>
 </html>
